@@ -78,6 +78,8 @@ let b=23;
 console.log("outside", b); // output will be 23 because dono let alag alag variable hai mtlb block ke andar wala let block ke bahar access nhi hoga
  // output will be 45
  
+// dated: 28jan2026
+
 // confusion no.1
 
 // why var leaks the block
