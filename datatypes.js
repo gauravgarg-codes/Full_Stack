@@ -1,4 +1,4 @@
-// datatypes.js
+// DATATYPES IN JAVASCRIPT
 // data ka types ---😊
 
 
@@ -25,7 +25,7 @@
 // Primitive data types 
 
 let num = 45; // number.
-let b = num;    // a copy of num is created in b. so if we change b, num will not be affected and if we change num, b will not be affected.
+let s = num;    // a copy of num is created in b. so if we change b, num will not be affected and if we change num, b will not be affected.
 let str = "Hello, World!"; // string
 let bool = true; // boolean
 let undef; // undefined
@@ -67,3 +67,76 @@ let date = new Date(); // date
 // future mein hum koi liberary use krenge ab is case mein un liberaries mein kai baar kuch fields hoti hai
 //      jinse similar hum bhi banna dete hai aur galti se hamari banai hui fields us liberary ki fields ko 
 //      overwrite kr deti hai.ya change kar deti hai is problem ko solve krne ke liye symbol use hota hai.
+let shreyjs = {
+        uid: 12,
+        model:"harsh"
+}
+shreyjs.uid = 1;// overwriting the uid field.
+
+// to avoid this problem we use symbol.
+let uid = Symbol("uid");
+let shreyjs2 = {
+        [uid]: 12,
+        model:"harsh"
+}
+      //BigInt
+// BigInt IN JAVASCRIPT --> ek aisa data type jo bahut bade numbers ko represent kr sakta hai.
+// normally javascript mein hum max 2^53 -1 tak ke numbers ko hi represent kr sakte hai.
+let bigIntNumber = BigInt(123456789012345678901234567890); // using BigInt function
+let bigIntNumber2 = 123456789012345678901234567890n; // using 'n' at the end 
+
+//-----------------------------😊----------------------------------
+                 // REFERENCE DATA TYPES---> = KE BAAD BRACKETS AA JATE HAIN
+        // ARRAYS 
+    let a = [1,2,3]; // array
+    let b = a; // b is a reference to a
+    b.pop(); // removing last element from b
+    console.log(a); // a is also affected because b is a reference to a
+    console.log(b); // b is also affected because b is a reference to a
+        // OBJECTS
+    let c ={
+        name:"shrey",
+    }   
+    let d = c; // b is a reference to a
+    b.name = "harsh";   // changing name property of b and this also makes changes in a because b is a reference to a.
+    // and same happens for functions.
+
+    // DYNAMIC TYPING IN JAVASCRIPT'
+
+    // javascript is a dynamically typed language NOT A STATICALLY TYPED LANGUAGE.
+    // iska matlab hai ki hum ek variable ko declare krne ke baad usme kisi bhi type ki value assign kar sakte hai(data ko change kr sakte hai)
+        let data = 45; // data is a number              
+        data = "Hello, World!"; // now data is a string
+        data = true; // now data is a boolean
+        data = { name: "Alice", age: 30 }; // now data is an object
+        data = [1, 2, 3, 4, 5]; // now data is an array
+        data = function() { console.log("Hello!"); }; // now data is a function
+        data = null; // now data is null
+        data = undefined; // now data is undefined
+        data = Symbol('sym'); // now data is a symbol
+        data = 9007199254741991n; // now data is a bigint
+   // isliye javascript mein type checking karna thoda mushkil hota hai kyuki ek variable mein alag alag types ki values aa sakti hai.
+                // static is better than dynamic typing. type checking easy hota hai.
+
+   // typeof quirks (e.g. typeof null === "object")
+    typeof NaN;
+    typeof null;
+    typeof "hello";
+    typeof 123;
+    typeof true;
+    // some precision error in float numbers operations
+        0.1 + 0.2 === 0.3; // false
+        0.1 + 0.2; // 0.30000000000000004
+
+// type coercion --> concept jisme javascript automatically ek type ko dusre type mein convert kar deta hai.
+    let x = "5";
+    let y = 1;
+        console.log(x + y); // 510 (string concatenation) // this is type coercion
+        console.log(Number(x) + y); // 15 (type conversion)
+        console.log(x-2); // 4 (type coercion)
+
+// Truthy and falsy values
+// falsy values --> false, 0, -0, 0n, "", null, undefined, NaN   rest all are truthy values.
+        if(12){
+                console.log("This is truthy");
+        }
