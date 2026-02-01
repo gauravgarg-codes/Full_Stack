@@ -1,4 +1,4 @@
-// DATATYPES IN JAVASCRIPT
+ // DATATYPES IN JAVASCRIPT
 // data ka types ---😊
 
 
@@ -16,7 +16,7 @@
 //     a. objects {}
 //     b. arrays []
 //     c. functions ()
-//     d. dates
+//     d. dates 
         // jha value mein brakets dikhe wo non-primitive hota hai --> directly copy nhi kr sakte.
         //    balki uska reference copy hota hai.
 // jaise humans are classified in three categories: male feamale and others.
