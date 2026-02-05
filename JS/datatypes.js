@@ -50,7 +50,7 @@ let date = new Date(); // date
         // NUMBER
 // NUMBER IN JAVASCRIPT --> Data written without quotes is said to be number data type.
 // 1234
-// -1234
+// -1234   
       // BOOLEAN
 // BOOLEAN IN JAVASCRIPT --> Data written as true or false is said to be boolean data type.
 // true 
@@ -140,3 +140,7 @@ let bigIntNumber2 = 123456789012345678901234567890n; // using 'n' at the end
         if(12){
                 console.log("This is truthy");
         }
+
+
+
+        
