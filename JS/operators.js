@@ -1,7 +1,7 @@
 // Arithmetic, comparison, logical, assignment, unary, ternary
 
 // 1.  +, -, /,  *,  %,  ** --> Arithmetic Operator
-// 2. =, ==, ===, !=, !==, >=, <=, >, <  --> Comparison Operator
+// 2. ==, ===, !=, !==, >=, <=, >, <  --> Comparison Operator
 // 3. =, +=, -=, *=, /=, %= ---> Assignment Operator
     let a = 12;
     a += 3; // a=a+3 and save.
@@ -10,7 +10,7 @@
     a /= 3; // divide current value of a with 3 and save.
     a %= 3; // remainder of current value of 3 on dividing with 3.
 // 4. Logical Operator
-// &&--> AndAnd, || -->OrOr, !--> Not
+// &&--> AndAnd, || -->OrOr, !--> Not  
 // && ---> true && true // true
 // || ---> (true || false // true), (true || true// true)
 
@@ -21,7 +21,6 @@
 // TRICK --> if in console we put + before a string which can convert into the number so it will
 // "text" so +"text"--> Nan
 // "5" so +"5"--> 5 into number.
-
 // 6. ternary Operator
 // ?:
 
