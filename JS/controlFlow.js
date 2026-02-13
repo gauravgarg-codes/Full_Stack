@@ -76,4 +76,7 @@ function getGrade(score){
     case 3:
         console.log("three");
     }
-    
+ 
+
+
+
