@@ -5,15 +5,14 @@
 // EARLY RETURN PATTERN 
  
 function getGrade(score){
-    if(score>=90 && score<=100){return "a";}
-    else if(score>=90 && score<=100){
-        return "b";}
+    if(score>=90 && score<=100){
+        return "a";}
     else if(score>=80 && score<=89){
-        return "c";}
+        return "b";}
     else if(score>=70 && score<=79){
-        return "d";}
+        return "c";}
     else if(score>=60 && score<=69){
-        return "e";}
+        return "d";}
     else if(score>=33 && score<=59){
         return "e";}
     else if(score>=0 && score<=32){
@@ -70,13 +69,13 @@ function getGrade(score){
 // common confusion --> "fallthrough in switch-case" 
 
     let x=2;
-    switch(x){
+    switch(x){  
     case 2:    
         console.log("two");  // break is missing so output will be (two three)--> [that is a bug]
     case 3:
         console.log("three");
     }
- 
+  
 
-
+  
 
