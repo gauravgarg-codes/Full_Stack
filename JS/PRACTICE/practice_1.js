@@ -100,21 +100,47 @@ console.log("solution of question 9 |")
 
 // QUESTION RELATED TO BREAK AND CONTINUE
 
-    // Q.1: 
+    // Q.1:  STOP AT FIRST MULTIPLE OF 7
+    // WRITE A LOOP FROM 1 TO 100 THAT:
+    // PRINT EACH NUMBER
+    // STOPS THE LOOP WHEN IT ENCOUNTERS THE FIRST MULTIPLE OF 7
     
+     for(let i=1; i<=100; i++){
+        console.log(i);
+        if(i%7 === 0){
+            break;
+        }
+     }
     
+// Q.2: SKIP MULTIPLES OF 3
+    // WRITE A LOOP FROM 1 TO 20 THAT:
+    // - skip the number divisible by 3
+    // - prints all others
+
+// use continue
+
+// excepted output:
+// 1 2 4 5 7 8 10 11 13 14 16 17 19 20
+
+    for(let i=1; i<=20; i++){
+        if(i%3 === 0) continue;   //skip "if" statisfies.
+        console.log(i);
+    }
 
 
+// Q.3: PRINT FIRST 5 ODD NUMBERS ONLY
+    // WRITE A LOOP FROM 1 TO 100 THAT:
+    // PRINTS ONLY 5 ODD NUMBERS
+    // THEN STOPS THE LOOP
 
-
-
-
-
-
-
-
-
-
-
-
-
+// USE BOTH IF, CONTINUE, AND A COUNTER + BREAK
+        let count = 0;
+        for(let i=1; i<101;i++){
+            if (i%2 === 1){
+            console.log(i);
+            count++;  
+            }  
+            if(count === 5){
+                break;
+            }
+        }
