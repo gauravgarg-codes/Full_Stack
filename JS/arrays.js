@@ -18,7 +18,7 @@ arr.slice(0,3);// original array ki copy kreate karo and usme se ek slice cut kr
 arr.reverse();// change the main array and reverse the order of the array.
 // sort --> used to make the order decending order or accending order
 
-let ar=[11,33,45,21,5,98];
+let arr=[11,33,45,21,5,98];
 let sr = arr.sort(function(a,b){
     return a-b;// make accending order
     return b-a; // make decending order
@@ -34,4 +34,13 @@ arr.map(function(val){
     return 12; // this is the onlu 
 }) // output--> [12,12,12,12,12,12] since map method creates a new array with the results of calling a provided function on every element in the calling array. In this case, it returns 12 for each element in the original array.
 // if you didn't return anything in the map function then it will return undefined for each element in the original array, resulting in an array of undefined values.
+
+
+
+// FILTER
+arr.filter(function(val){
+    return (val>20) return true; // this will return a new array with only the values that are greater than 20 from the original array.
+})
+
+
 
