@@ -1,0 +1,5 @@
+let obj ={
+    name: "Gaurav",
+    age: 22,
+    city: "Delhi",
+};  
