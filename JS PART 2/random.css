@@ -1,0 +1,13 @@
+ width="306"
+                  height="84"
+                  x="-32.50"
+                  y="78.39"
+                  rx="42"
+                  transform="translate(120.42 -49.88) rotate(45)"
+                  <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Leave a comment here"
+                  id="message"
+                  style="height: 10rem"
+                ></textarea>
